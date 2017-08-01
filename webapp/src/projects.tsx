@@ -310,31 +310,31 @@ export class Projects extends data.Component<ProjectsProps, ProjectsState> {
                 {tab == WELCOME ? <div className={tabClasses}>
                     <span className="group welcomebuttons">
                         {this.state.resumeProject ? <sui.Button
-                            class={"huge ui primary welcomebutton-resume"}
+                            class={"huge ui teal welcomebutton-resume"}
                             text={lf("Resume") }
                             onClick={() => resume() }
                             onMouseEnter={() => this.setState({ welcomeDescription: lf("Open the last project you worked on.") }) }
                             onMouseLeave={() => this.setState({ welcomeDescription: "" }) } /> : undefined}
                         <sui.Button
-                            class={"huge primary welcomebutton-gettingstarted"}
+                            class={"huge green welcomebutton-gettingstarted"}
                             text={lf("Getting started") }
                             onClick={() => gettingStarted() }
                             onMouseEnter={() => this.setState({ welcomeDescription: lf("Create a fun, beginner project in a guided tutorial.") }) }
                             onMouseLeave={() => this.setState({ welcomeDescription: "" }) } />
                         <sui.Button
-                            class={"huge primary welcomebutton-newproject"}
+                            class={"huge brown welcomebutton-newproject"}
                             text={lf("New project") }
                             onClick={() => newProject() }
                             onMouseEnter={() => this.setState({ welcomeDescription: lf("Create a blank project.") }) }
                             onMouseLeave={() => this.setState({ welcomeDescription: "" }) } />
                         <sui.Button
-                            class={"huge primary welcomebutton-openproject"}
+                            class={"huge grey welcomebutton-openproject"}
                             text={lf("Load project") }
                             onClick={() => loadProject() }
                             onMouseEnter={() => this.setState({ welcomeDescription: lf("Continue working on a previous project.") }) }
                             onMouseLeave={() => this.setState({ welcomeDescription: "" }) } />
                         {galleryNames.length > 0 ? <sui.Button
-                            class={"huge primary welcomebutton-galleries"}
+                            class={"huge orange welcomebutton-galleries"}
                             text={lf("Project galleries") }
                             onClick={() => projectGalleries() }
                             onMouseEnter={() => this.setState({ welcomeDescription: lf("Discover guided tutorials, full project samples and awesome activities!") }) }
