@@ -46,7 +46,7 @@ Open the developer tools and watch the console, PXT wil validate the localized s
 ### Block localization guidance
 
 * Do not capitalize blocks
-* Do not translalte ``%variable`` names
+* Do not translate ``%variable`` names
 * Do not reorder parameters
 * Maintain the same structure of ``|`` and ``%variables%``
 
